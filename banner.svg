@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 300" width="1280" height="300" role="img" aria-label="Shain Gerstner — Design Engineer">
+  <defs>
+    <radialGradient id="bg" cx="68%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#101012"/>
+      <stop offset="55%" stop-color="#0a0a0b"/>
+      <stop offset="100%" stop-color="#050506"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="45%" stop-color="#cfe8f2" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7fb4cc" stop-opacity="0.12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9cd4e8" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#9cd4e8" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card"><rect x="0" y="0" width="1280" height="300" rx="14"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1280" height="300" fill="url(#bg)"/>
+
+    <!-- faint baseline horizon -->
+    <line x1="0" y1="252" x2="1280" y2="252" stroke="#ffffff" stroke-opacity="0.06"/>
+
+    <!-- drifting node mesh (left field) -->
+    <g stroke="#ffffff" stroke-opacity="0.10" fill="#ffffff" fill-opacity="0.22">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="11s" repeatCount="indefinite"/>
+        <line x1="120" y1="92" x2="214" y2="150"/><line x1="214" y1="150" x2="150" y2="222"/>
+        <circle cx="120" cy="92" r="2.5"/><circle cx="214" cy="150" r="2"/><circle cx="150" cy="222" r="2.5"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0; 0 7; 0 0" dur="14s" repeatCount="indefinite"/>
+        <line x1="214" y1="150" x2="320" y2="100"/><line x1="320" y1="100" x2="360" y2="190"/>
+        <circle cx="320" cy="100" r="2"/><circle cx="360" cy="190" r="2.5"/>
+      </g>
+    </g>
+
+    <!-- orbital wireframe: 3D + motion, centered right -->
+    <g transform="translate(920 138)">
+      <circle r="150" fill="url(#glow)"/>
+      <!-- outer ring -->
+      <circle r="118" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1"/>
+      <!-- spinning ellipses forming a sphere -->
+      <g fill="none" stroke="url(#ring)" stroke-width="1.4">
+        <ellipse rx="118" ry="40">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="34s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse rx="118" ry="74">
+          <animateTransform attributeName="transform" type="rotate" from="60" to="420" dur="26s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse rx="118" ry="104">
+          <animateTransform attributeName="transform" type="rotate" from="120" to="-240" dur="44s" repeatCount="indefinite"/>
+        </ellipse>
+      </g>
+      <!-- orbiting node -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+        <circle cx="118" cy="0" r="3" fill="#cfe8f2" fill-opacity="0.9"/>
+      </g>
+      <circle r="3.5" fill="#ffffff" fill-opacity="0.85"/>
+    </g>
+
+    <!-- quiet brand label -->
+    <text x="120" y="160" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="5" fill="#ffffff" fill-opacity="0.42">DESIGN ENGINEER</text>
+    <text x="120" y="190" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" letter-spacing="1" fill="#ffffff" fill-opacity="0.22">3D · Motion · Dev-ready systems</text>
+  </g>
+</svg>
