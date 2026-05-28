@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./banner.svg" width="100%" alt="Shain Gerstner — Design Engineer · 3D, Motion, Dev-ready systems" />
+</p>
+
 # Shain Gerstner
 
 **Design Engineer — Thun, Switzerland**
