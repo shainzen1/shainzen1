@@ -31,9 +31,9 @@ More — Trauffer, Naturheilpraxis Nadja, and 3D/motion work — over at [shain.
 
 ### Toolbox
 
-**Design & motion** — Figma · Framer · Blender
-**Build** — TypeScript · React · Astro · Tailwind CSS
-**Workflow** — AI-assisted, design-to-production
+- **Design & motion** — Figma · Framer · Blender
+- **Build** — TypeScript · React · Astro · Tailwind CSS
+- **Workflow** — AI-assisted, design-to-production
 
 ### Reach me
 
